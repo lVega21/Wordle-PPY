@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>JS Basics</title>
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-<meta name="viewport" content="width= device-width, initial-scale=1"/>
-</head>
-<body>
-    <h1>JS Basics</h1>
-    <h2>Hello World</h2>
-    <p>This is my first website</p>
-    <script src="./funciones_leonardoVega.js" defer></script>
-</body>
+
+<html lang="es  ">
+  <head>
+    <title>WordlePPY</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="imagens/mpp.png" />
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
 
 
+<div class="cuaDros"> </div> 
+<div id="contenedor">
+<p id="win"></p>
+<p id="vida_Pantalla"></p>
+<div id="cuadros">                        
+            
+</div>
 
 
+<input type="text" id="texto" readonly>
+    <div id="teclado">
+        <div id="bloq_1">
+            <button onclick="letra('Q')" class="buTon" id="Q">Q</button> <button onclick="letra('W')"class="buTon" id="W">W</button> 
+            <button onclick="letra('E')" class="buTon" id="E">E</button> <button onclick="letra('R')"class="buTon" id="R">R</button>
+            <button onclick="letra('T')" class="buTon" id="T">T</button> <button onclick="letra('Y')"class="buTon" id="Y">Y</button> 
+            <button onclick="letra('U')" class="buTon" id="U">U</button> <button onclick="letra('I')"class="buTon" id="I">I</button>
+            <button onclick="letra('O')" class="buTon" id="O">O</button> <button onclick="letra('P')"class="buTon" id="P">P</button>
+        </div>
+        <div id="bloq_2">
+            <button onclick="letra('A')" class="buTon" id="A">A</button> <button onclick="letra('S')" class="buTon" id="S">S</button>
+            <button onclick="letra('D')" class="buTon" id="D">D</button> <button onclick="letra('F')" class="buTon" id="F">F</button>
+            <button onclick="letra('G')" class="buTon" id="G">G</button> <button onclick="letra('H')" class="buTon" id="H">H</button>
+            <button onclick="letra('J')" class="buTon" id="J">J</button> <button onclick="letra('K')" class="buTon" id="K">K</button>
+            <button onclick="letra('L')" class="buTon" id="L">L</button> <button onclick="letra('Ñ')" class="buTon" id="Ñ">Ñ</button>
+        </div>
 
 
+        <div id="bloq_3">
+            <button onclick="letra('Z')" class="buTon" id="Z">Z</button> <button onclick="letra('X')" class="buTon" id="X">X</button> 
+            <button onclick="letra('C')" class="buTon" id="C">C</button> <button onclick="letra('V')" class="buTon" id="V">V</button>
+            <button onclick="letra('B')" class="buTon" id="B">B</button> <button onclick="letra('N')" class="buTon" id="N">N</button> 
+            <button onclick="letra('M')" class="buTon" id="M">M</button>
+        </div>
 
+        <div>
+            <button class="buTonE" id="send">ENVIAR</button> <button onclick="borrar()" class="buTonB" id="delete"></button>
+        </div>
+    </div>
+</div>
 
-</html>
+<script src="script.js" defer></script>
+  </body>
+
+  </html>
