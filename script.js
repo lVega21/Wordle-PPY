@@ -1,5 +1,5 @@
 let vida=6;
-let palabra = "APPLE";
+
 const GRID = document.getElementById('cuadros');
 const vidaPantalla = document.getElementById('vida_Pantalla');
 reiniciar ();
@@ -94,7 +94,6 @@ function reiniciar (){
         vida=6;
         palabra= "APPLE";
 
-
         const resultado =document.getElementById ("win");
             resultado.innerHTML = "";
 
@@ -111,3 +110,7 @@ function reiniciar (){
  
 }
 
+const API = "https://random-word-api.herokuapp.com/word?length=5&lang=es";
+fetch(API).then((response) =>{
+
+});
